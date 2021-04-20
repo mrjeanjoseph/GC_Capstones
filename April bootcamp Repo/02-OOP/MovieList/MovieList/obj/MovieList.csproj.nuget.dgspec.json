@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jeo\\Desktop\\GC2021\\April bootcamp Repo\\02-OOP\\StaticPractice\\StaticPractice\\StaticPractice.csproj": {}
+    "C:\\Users\\Jeo\\source\\repos\\MovieList\\MovieList\\MovieList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jeo\\Desktop\\GC2021\\April bootcamp Repo\\02-OOP\\StaticPractice\\StaticPractice\\StaticPractice.csproj": {
+    "C:\\Users\\Jeo\\source\\repos\\MovieList\\MovieList\\MovieList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jeo\\Desktop\\GC2021\\April bootcamp Repo\\02-OOP\\StaticPractice\\StaticPractice\\StaticPractice.csproj",
-        "projectName": "StaticPractice",
-        "projectPath": "C:\\Users\\Jeo\\Desktop\\GC2021\\April bootcamp Repo\\02-OOP\\StaticPractice\\StaticPractice\\StaticPractice.csproj",
+        "projectUniqueName": "C:\\Users\\Jeo\\source\\repos\\MovieList\\MovieList\\MovieList.csproj",
+        "projectName": "MovieList",
+        "projectPath": "C:\\Users\\Jeo\\source\\repos\\MovieList\\MovieList\\MovieList.csproj",
         "packagesPath": "C:\\Users\\Jeo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jeo\\Desktop\\GC2021\\April bootcamp Repo\\02-OOP\\StaticPractice\\StaticPractice\\obj\\",
+        "outputPath": "C:\\Users\\Jeo\\source\\repos\\MovieList\\MovieList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
