@@ -1,0 +1,13 @@
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\bin\Debug\netcoreapp3.1\MVCShop.exe
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\bin\Debug\netcoreapp3.1\MVCShop.deps.json
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\bin\Debug\netcoreapp3.1\MVCShop.runtimeconfig.json
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\bin\Debug\netcoreapp3.1\MVCShop.runtimeconfig.dev.json
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\bin\Debug\netcoreapp3.1\MVCShop.dll
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\bin\Debug\netcoreapp3.1\MVCShop.pdb
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\obj\Debug\netcoreapp3.1\MVCShop.csprojAssemblyReference.cache
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\obj\Debug\netcoreapp3.1\MVCShop.AssemblyInfoInputs.cache
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\obj\Debug\netcoreapp3.1\MVCShop.AssemblyInfo.cs
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\obj\Debug\netcoreapp3.1\MVCShop.csproj.CoreCompileInputs.cache
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\obj\Debug\netcoreapp3.1\MVCShop.dll
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\obj\Debug\netcoreapp3.1\MVCShop.pdb
+C:\Users\Jeo\source\repos\MVCShop\MVCShop\obj\Debug\netcoreapp3.1\MVCShop.genruntimeconfig.cache
