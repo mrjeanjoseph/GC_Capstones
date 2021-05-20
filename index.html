@@ -16,24 +16,25 @@
 <body class="center">
 
 <section>
-    <span class="float-right">Float right</span>
-    <div class="card" style="width: 25rem;">
+    <div class="card mx-auto" style="width: 25rem;">
         <div class="card-body">
-            <h3 class="card-title">Welcome</h3>
-            <h6 class="card-subtitle mb-2 text-muted">to Jean Sell Stuff</h6>
+            <h2 class="card-title text-center">Welcome</h2>
+            <h6 class="card-subtitle mb-2 text-muted text-center">to Jean Sell Stuff</h6>
             <ul class="list-group">
-                <li class="list-group-item">Jellybeans<button class="btn btn-dark btn-sm" onclick="AddJellybeans()">Add
+                <li class="list-group-item">Jellybeans<button class="btn btn-dark btn-sm float-right" onclick="AddJellybeans()">Add
                         to cart</button></li>
-                <li class="list-group-item">Sneakers<button class="btn btn-dark btn-sm" onclick="AddSneakers()">Add to
+                <li class="list-group-item">Sneakers<button class="btn btn-dark btn-sm float-right" onclick="AddSneakers()">Add to
                         cart</button></li>
-                <li class="list-group-item">MilkeyWay<button class="btn btn-dark btn-sm" onclick="AddMilkeyWay()">Add to
+                <li class="list-group-item">MilkeyWay<button class="btn btn-dark btn-sm float-right" onclick="AddMilkeyWay()">Add to
                         cart</button></li>
-                <li class="list-group-item">Hershey Bar<button class="btn btn-dark btn-sm" onclick="HersheyBar()">Add to
+                <li class="list-group-item">Hershey Bar<button class="btn btn-dark btn-sm float-right" onclick="HersheyBar()">Add to
                         cart</button></li>
-                <li class="list-group-item">Hot Tamales<button class="btn btn-dark btn-sm" onclick="AddHotTamales()">Add
+                <li class="list-group-item">Hot Tamales<button class="btn btn-dark btn-sm float-right" onclick="AddHotTamales()">Add
                         to cart</button></li>
-            </ul>
-            <button class="btn btn-primary" onclick="DisplayMyItems()">Display Items</button>
+            </ul><br>
+            <button class="btn btn-primary mx-auto btn-block w-50" onclick="DisplayMyItems()">Display Items</button><br>
+
+            <li class="list-group-item">Grand Total:<h3 class="float-right" id="GrandTotal">$0:00</h3></li>
         </div>
     </div>
 </section>

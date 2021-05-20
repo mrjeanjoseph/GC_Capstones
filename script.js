@@ -52,18 +52,21 @@ function AddHotTamales() {
     itemsAdded.push(newItem);
 }
 
-
-let grandTotal = 0;
+let salesTax = .06;
+let total = 0;
 function DisplayMyItems() {
+    //console._commandLineAPI.clear();
     for (let i = 0; i < itemsAdded.length; i++) {
         let nameDisp = itemsAdded[i].name
         let priceDisp = itemsAdded[i].price
-
-        grandTotal += priceDisp;
+        
+        total += priceDisp;
         console.log(`${nameDisp}: $${priceDisp}`);
-
-
+        
+        //console.log('\n');
         //alert(`Grand Total: $${grandTotal}`);
-        console.log(`Grand Total: $${grandTotal}`);
+        console.log(`Your Total: $${total}`);
     }
+    var GrandTotal = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    GrandTotal.getElementById('GrandTotal').innerHTML = GrandTotal;
 }
