@@ -67,6 +67,6 @@ function DisplayMyItems() {
         //alert(`Grand Total: $${grandTotal}`);
         console.log(`Your Total: $${total}`);
     }
-    var GrandTotal = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    GrandTotal.getElementById('GrandTotal').innerHTML = GrandTotal;
+    // var GrandTotal = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    // GrandTotal.getElementById('GrandTotal').innerHTML = GrandTotal;
 }
