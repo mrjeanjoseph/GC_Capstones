@@ -5,23 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Shopping Cart</title>
 </head>
 
-<body>
-    <h2>My list of item for sale:</h2>
-    <ul>
-        <li>Jellybeans<button onclick="AddJellybeans()">Add to cart</button></li>
-        <li>Sneakers<button onclick="AddSneakers()">Add to cart</button></li>
-        <li>MilkeyWay<button onclick="AddMilkeyWay()">Add to cart</button></li>
-        <li>Hershey Bar<button onclick="HersheyBar()">Add to cart</button></li>
-        <li>Hot Tamales<button onclick="AddHotTamales()">Add to cart</button></li>
-    </ul>
+<body class="center">
 
-    <button onclick="DisplayMyItems()">Display Items</button>
+<section>
+    <span class="float-right">Float right</span>
+    <div class="card" style="width: 25rem;">
+        <div class="card-body">
+            <h3 class="card-title">Welcome</h3>
+            <h6 class="card-subtitle mb-2 text-muted">to Jean Sell Stuff</h6>
+            <ul class="list-group">
+                <li class="list-group-item">Jellybeans<button class="btn btn-dark btn-sm" onclick="AddJellybeans()">Add
+                        to cart</button></li>
+                <li class="list-group-item">Sneakers<button class="btn btn-dark btn-sm" onclick="AddSneakers()">Add to
+                        cart</button></li>
+                <li class="list-group-item">MilkeyWay<button class="btn btn-dark btn-sm" onclick="AddMilkeyWay()">Add to
+                        cart</button></li>
+                <li class="list-group-item">Hershey Bar<button class="btn btn-dark btn-sm" onclick="HersheyBar()">Add to
+                        cart</button></li>
+                <li class="list-group-item">Hot Tamales<button class="btn btn-dark btn-sm" onclick="AddHotTamales()">Add
+                        to cart</button></li>
+            </ul>
+            <button class="btn btn-primary" onclick="DisplayMyItems()">Display Items</button>
+        </div>
+    </div>
+</section>
 
 
 
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script> -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 
