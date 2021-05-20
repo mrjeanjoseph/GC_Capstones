@@ -52,9 +52,9 @@ function AddHotTamales() {
     itemsAdded.push(newItem);
 }
 
-let salesTax = .06;
-let total = 0;
 function DisplayMyItems() {
+    let salesTax = .06;
+    let total = 0;
     console.clear();
     //console._commandLineAPI.clear();
     for (let i = 0; i < itemsAdded.length; i++) {
@@ -69,6 +69,8 @@ function DisplayMyItems() {
     }
     
     console.log(`Your Total: $${total}`);
+    console.log(`Grand Total with Tax: $${(total * 0.06) + total}`);
+
     // var GrandTotal = total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     // GrandTotal.getElementById('GrandTotal').innerHTML = GrandTotal;
 }
