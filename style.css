@@ -13,20 +13,9 @@
 }
 
 div{
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: black; */
     height: 700px;
 }
 
-#Color1{
-    background-color: red;
-}
-
-#Color2{
-    background-color: white;
-}
-
-#Color3{
-    background-color:blue;
-}
