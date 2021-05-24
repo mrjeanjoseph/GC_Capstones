@@ -82,4 +82,54 @@ function calcAverageProductPrice(avgPrice: Product[]): number{
 console.log(calcAverageProductPrice(product));
 
 
-//
+//INVENTORY
+interface InventoryItem{
+    product: Product,
+    quantity: number
+};
+
+let i1: InventoryItem = {
+    product: {
+        name: "motor",
+        price: 10.00,
+    },
+    quantity: 10
+};
+
+let i2: InventoryItem = {
+    product: {
+        name: "sensor",
+        price: 12.50,
+    },
+    quantity: 4
+};
+
+let i3: InventoryItem = {
+    product: {
+        name: "LED",
+        price: 1.00,
+    },
+    quantity: 20
+};
+
+let inventory: InventoryItem[] = [
+    i1,
+    i2,
+    i3
+];
+
+function calcInventoryValue(totalPrice: InventoryItem[]): number{
+
+    let total: number = 0;
+    // totalPrice.forEach(function(p:InventoryItem){
+    //     total+=(p.product.price * p.quantity);
+    // });
+    // return total;
+
+    //or I can use a loop
+    for(let i=0; i<totalPrice.length; i++){
+        total += totalPrice[i].product.price * totalPrice[i].quantity;
+    }
+    return total;
+}
+console.log(calcInventoryValue(inventory));

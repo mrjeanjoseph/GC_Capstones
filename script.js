@@ -45,13 +45,54 @@ var product = [
     p2
 ];
 function calcAverageProductPrice(avgPrice) {
-    //let result: Product[] = avgPrice;
-    var counter = 0;
+    var count = 0;
     var total = 0;
     avgPrice.forEach(function (ap) {
         total += ap.price;
-        counter++;
+        count++;
     });
-    return total / counter;
+    return total / count;
+    //const arrAvg = product => product.reduce((a,b)=> a.price+b.price, 0) /product.length;
+    //return arrAvg;
 }
 console.log(calcAverageProductPrice(product));
+;
+var i1 = {
+    product: {
+        name: "motor",
+        price: 10.00
+    },
+    quantity: 10
+};
+var i2 = {
+    product: {
+        name: "sensor",
+        price: 12.50
+    },
+    quantity: 4
+};
+var i3 = {
+    product: {
+        name: "LED",
+        price: 1.00
+    },
+    quantity: 20
+};
+var inventory = [
+    i1,
+    i2,
+    i3
+];
+function calcInventoryValue(totalPrice) {
+    var total = 0;
+    // totalPrice.forEach(function(p:InventoryItem){
+    //     total+=(p.product.price * p.quantity);
+    // });
+    // return total;
+    //or I can use a loop
+    for (var i = 0; i < totalPrice.length; i++) {
+        total += totalPrice[i].product.price * totalPrice[i].quantity;
+    }
+    return total;
+}
+console.log(calcInventoryValue(inventory));
