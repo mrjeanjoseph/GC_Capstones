@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+h1, h2 {
+  text-align: center;
+}
 
 table{
     width: 75%;
@@ -6,15 +9,16 @@ table{
 
 table, th, td {
     border: 1px solid black;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
+    font-size: large;
   }
 
-  table.center {
+table.center {
     margin-left: auto; 
     margin-right: auto;
   }
 
-  th, td {
+th, td {
     padding: 15px;
     text-align: left;
   }
