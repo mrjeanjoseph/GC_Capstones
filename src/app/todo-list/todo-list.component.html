@@ -2,15 +2,15 @@
     <h1>Todolist App</h1>
 
     <div *ngFor="let task of initialList; index as i">
-        <form #itemForm="ngForm" (ngSubmit)="completedTask(itemForm)">
-            <h4>
-                <button name="completed" *ngIf="!task.completed" ngModel="{{i}}">Complete</button> - {{ task.task }}
-            </h4>
+        <form #itemForm="ngForm" (ngSubmit)="RemoveTask(itemForm)">            
+            <p><button name="completed" *ngIf="!task.completed" ngModel="{{i}}">Complete</button> - {{ task.task }}</p>                        
         </form>
     </div>
-    
-    <form #addForm="ngForm" (ngSubmit)="AddTasktoList(addForm)">
-        <input type="text" name="task" id="task" ngModel />
-        <button>Add Task</button>
+
+    <form #addForm="ngForm" (ngSubmit)="AddTask(addForm)">
+        <div>
+            <input type="text" name="task" id="task" ngModel />
+        </div><br>
+        <div><button class="button">Add Task</button></div>
     </form>
 </div>

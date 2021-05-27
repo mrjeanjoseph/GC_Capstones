@@ -23,7 +23,12 @@ export class TodoListComponent implements OnInit {
       completed: false
     },
     {
-      task: "Meeting at 9:15AM",
+      task: "Meeting at 11:15AM",
+      completed: false
+    },
+    
+    {
+      task: "Dinner tonight at 6:PM",
       completed: false
     },
     {
@@ -42,7 +47,7 @@ export class TodoListComponent implements OnInit {
     this.initialList[form.form.value.completed].completed = true;
   }
 
-  AddTasktoList(form: NgForm):void {
+  AddTask(form: NgForm):void {
     let newTask:Todo = {
       task: form.form.value.task, // remember to call task in html name
       completed: false
