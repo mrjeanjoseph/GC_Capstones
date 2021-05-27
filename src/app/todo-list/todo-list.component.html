@@ -2,7 +2,7 @@
     <h1>Todolist App</h1>
 
     <div *ngFor="let task of initialList; index as i">
-        <form #itemForm="ngForm" (ngSubmit)="RemoveTask(itemForm)">            
+        <form #itemForm="ngForm" (ngSubmit)="completedTask(itemForm)">            
             <p><button name="completed" *ngIf="!task.completed" ngModel="{{i}}">Complete</button> - {{ task.task }}</p>                        
         </form>
     </div>

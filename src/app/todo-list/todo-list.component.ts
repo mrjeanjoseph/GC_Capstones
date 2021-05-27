@@ -54,4 +54,10 @@ export class TodoListComponent implements OnInit {
     };
     this.initialList.push(newTask);
   }
+  
+  RemoveTask(form: NgForm): void{
+    this.initialList[form.form.value.completed].task = "";
+    this.initialList[form.form.value.completed].task = "";
+    this.initialList[form.form.value.completed].completed = true;
+  }
 }
