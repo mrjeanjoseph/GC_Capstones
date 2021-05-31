@@ -1,0 +1,14 @@
+.titleheader{
+
+    display: flex;
+    /* Horizontally and veritcally center the text. */
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    width: 100%;
+    height: 68px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: linear-gradient(75deg, #82a522, #396468);    
+}
