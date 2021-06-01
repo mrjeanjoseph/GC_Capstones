@@ -1,4 +1,8 @@
 <form #searchForm="ngForm" (ngSubmit)="submitSearch(searchForm)">
-<input name="Type" ngModel placeholder="Please enter a type of house" />
-<button>Search</button>
+<div class="input-group mb-3 searchbar">
+    <input type="Type" class="form-control" ngModel placeholder="Please enter a type of house">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button">Search</button>
+    </div>
+  </div>
 </form>

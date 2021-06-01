@@ -1,25 +1,33 @@
 import { HouseService } from './../house.service';
 import { House } from './../house';
 import { Component, OnInit } from '@angular/core';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap'; // added here
 
 @Component({
   selector: 'app-houselist',
   templateUrl: './houselist.component.html',
-  styleUrls: ['./houselist.component.css']
+  styleUrls: ['./houselist.component.css'],
+  providers: [NgbCarouselConfig] // added here
 })
+
 export class HouselistComponent implements OnInit {
 
-  constructor(private houseservice: HouseService) { }
+  constructor(private houseservice: HouseService, config: NgbCarouselConfig) {
+    config.interval = 1000;
+    config.wrap = false;
+    config.keyboard = false;
+    config.pauseOnHover = true;
+  }
   houses: House[] = [];
 
   searchTerm = "";
 
-  getHouseResult(): House[]{
-    if(this.searchTerm == ""){
+  getHouseResult(): House[] {
+    if (this.searchTerm == "") {
       return this.houses;
     }
-    else{
-      return  this.houseservice.getAllByType(this.searchTerm);
+    else {
+      return this.houseservice.getAllByType(this.searchTerm);
     }
   }
 
@@ -28,7 +36,7 @@ export class HouselistComponent implements OnInit {
   }
 
   searchHouseByType(type: string): void {
-    //console.log(type);
+
     this.searchTerm = type; // to make sure we get data from the parameters
   }
 

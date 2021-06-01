@@ -1,10 +1,20 @@
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let house of getHouseResult()">
+        <div class="picsum-img-wrapper">
+            <img src="{{ house.img }}" alt="Random slide">
+        </div>
+        <div class="carousel-caption" style="padding-bottom: 5rem;">
+            <h1>{{ house.type }}</h1>
+            <h3>${{ house.price }}</h3>
+        </div>
+        <a 
+        [routerLink]="['/house', house.id]"><button 
+        type="button" 
+        class="btn btn-primary" 
+        >View Details</button></a>                
+        <hr>
+    </ng-template>
+</ngb-carousel>
 
-<app-searchform (submitsearch)="searchHouseByType($event)"></app-searchform>
 
-<div *ngFor="let house of getHouseResult()">
-    <h2>{{ house.type }}</h2>
-    <h2>${{ house.price }}</h2>
-    <img width="300px" src="{{ house.img }}" alt="">
-
-    <a [routerLink]="['/house', house.id]">View Details</a>
-</div>
+<app-searchform (submitsearch)="searchHouseByType($event)"></app-searchform><br>

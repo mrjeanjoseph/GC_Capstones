@@ -8,6 +8,7 @@ import { HouselistComponent } from './houselist/houselist.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchformComponent } from './searchform/searchform.component';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const appRoutes: Routes = [
     {path: 'house', component:HouselistComponent},
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
     ),
-    FormsModule // This is used to create a form
+    FormsModule,
+    NgbModule // This is used to create a form
   ],
   providers: [],
   bootstrap: [AppComponent]

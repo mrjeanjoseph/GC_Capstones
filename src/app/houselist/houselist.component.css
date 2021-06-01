@@ -1,0 +1,13 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 800px;
+  }
+
+a{
+    padding-top: 1rem;
+    display:block;
+    text-align:center;
+}
