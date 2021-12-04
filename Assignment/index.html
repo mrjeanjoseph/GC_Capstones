@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body class="center">
+
+<section>
+    <div class="card mx-auto" style="width: 25rem;">
+        <div class="card-body">
+            <h2 class="card-title text-center">Welcome</h2>
+            <h6 class="card-subtitle mb-2 text-muted text-center">to Jean Sell Stuff</h6>
+            <ul class="list-group">
+                <li class="list-group-item">Jellybeans<button class="btn btn-dark btn-sm float-right" onclick="AddJellybeans()">Add
+                        to cart</button></li>
+                <li class="list-group-item">Sneakers<button class="btn btn-dark btn-sm float-right" onclick="AddSneakers()">Add to
+                        cart</button></li>
+                <li class="list-group-item">MilkeyWay<button class="btn btn-dark btn-sm float-right" onclick="AddMilkeyWay()">Add to
+                        cart</button></li>
+                <li class="list-group-item">Hershey Bar<button class="btn btn-dark btn-sm float-right" onclick="HersheyBar()">Add to
+                        cart</button></li>
+                <li class="list-group-item">Hot Tamales<button class="btn btn-dark btn-sm float-right" onclick="AddHotTamales()">Add
+                        to cart</button></li>
+            </ul><br>
+            <button class="btn btn-primary mx-auto btn-block w-50" onclick="DisplayMyItems()">Display Items</button><br>
+
+            <!-- <li class="list-group-item">Grand Total:<h3 class="float-right" id="GrandTotal">$0:00</h3></li> -->
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script> -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
