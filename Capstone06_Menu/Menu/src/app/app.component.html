@@ -1,0 +1,19 @@
+<h1>Welcome to Chirpus Pizza</h1>
+<h2>See our {{title}}</h2>
+
+<div>
+  <table class="center">
+    <tr>
+      <th>Item</th>
+      <th>Category</th>
+      <th>Price</th>
+      <th>Description</th>
+    </tr>
+    <tr *ngFor="let items of SortByCategory()">
+      <td>{{ items.item }}</td>
+      <td>{{ items.category }}</td>
+      <td>${{ items.price }}</td>
+      <td>{{ items.description}}</td>
+    </tr>
+  </table>
+</div>
